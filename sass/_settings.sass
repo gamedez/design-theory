@@ -1,0 +1,57 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    font-family: 'Open Sans', sans-serif
+    margin: 0
+    position: relative
+    overflow-x: hidden
+.body
+    &__no
+        &-scroll
+            overflow: hidden
+            padding-right: 17px
+.container
+    max-width: 1140px
+    margin-right: auto
+    margin-left: auto
+img
+    max-width: 100%
+ul
+    list-style: none
+a
+    text-decoration: none
+    background-color: transparent
+a, button
+    cursor: pointer
+    outline: none
+.error
+    color: #e26868
+    font-size: 12px
+.invalid
+    color: #ff9f9f
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 15px
+    position: absolute
+    top: 100%
+button:hover, a:hover
+    filter: drop-shadow(0 0.15rem 0.5rem #1565D8)
+input, textarea
+    outline: none
+.arrow
+    &-up
+        margin: 10px
+        position: fixed
+        bottom: 22px
+        right: 20px
+        width: 40px
+        height: 40px
+        z-index: 88
+        visibility: hidden
+        &:hover
+            filter: none
+        &--show
+            visibility: visible
